@@ -40,7 +40,7 @@ Useage:
 #define ledA D5
 #define ledB D6
 
-#include "dlay.h"
+#include <dlay.h>
 dlay aTimer(500, false);               //Initialize an object, 500ms, no autostart.
 dlay bTimer(400, false);
 bool ledaState;                            //Save the state of the LEDs
