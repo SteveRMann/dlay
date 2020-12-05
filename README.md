@@ -29,20 +29,15 @@ if(obj.ding()){
   //handle the ding
   obj.start();
 }
-```<br>
-
-### //One-shot:<br>
-```if(obj.ding()){
-     obj.stop();
-     //handle the ding
-   }```<br>
-
-   obj.stop() resets the state of the timer. Otherwise, every call to ding() will be true with a time of zero.
-   obj.start and obj.stop may be called from anywhere in loop().
-   
-   Some basic Git commands are:
 ```
-git status
-git add
-git commit
+
+### //One-shot:
 ```
+if(obj.ding()){
+  obj.stop();
+  //handle the ding
+}
+```
+
+**obj.stop()** resets the state of the timer. Otherwise, every call to ding() will be true with a time of zero.<br>
+**obj.start** and obj.stop may be called from anywhere in loop().
