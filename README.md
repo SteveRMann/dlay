@@ -14,26 +14,25 @@ dlay() is a stripped-down fork of timeObj. If you need accuracy in micros, then 
 
 ## Useage:
   ### Initiate the object:<br>
-     ```
      dlay obj(int:time_ms,bool:start)
-     ```<br>
+     
      Where:
        time is the optional delay time in ms (default 10ms), and
        start is an optional boolean (default false) to begin timing immediately,
              or false, which means you have to manually start the timer: <br>
-       ```obj.start.```<br>
+       obj.start.
 
    ### //Async, free-run:<br>
      if(obj.ding()){
        //handle the ding
        obj.start();
-     }<br>
+     }
 
    ### //One-shot:<br>
-     ```if(obj.ding()){
+     if(obj.ding()){
        obj.stop();
        //handle the ding
-     }```<br>
+     }
 
    obj.stop() resets the state of the timer. Otherwise, every call to ding() will be true with a time of zero.
    obj.start and obj.stop may be called from anywhere in loop().
