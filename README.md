@@ -12,23 +12,25 @@ I could replace delay() altogether and hide the mess of millis. (It makes the co
 
 dlay() is a stripped-down fork of timeObj. If you need accuracy in micros, then use timeObj.h
 
-*   Useage:
+Useage:
    Initiate the object:
-     dlay obj(int:time,bool:start)
+     dlay obj(int:time_ms,bool:start)
      Where:
        time is the optional delay time in ms (default 10ms), and
-       start is an optional boolean (default true) to begin timing immediately,
+       start is an optional boolean (default false) to begin timing immediately,
              or false, which means you have to manually start the timer: obj.start.
 
-   Async, free-run:
+   //Async, free-run:
      if(obj.ding()){
        //handle the ding
        obj.start();
      }
 
-   One-shot:
+   //One-shot:
      if(obj.ding()){
+       obj.stop();
        //handle the ding
      }
 
-     obj.start and obj.stop may be called from anywhere in loop().
+   obj.stop() resets the state of the timer. Otherwise, every call to ding() will be true with a time of zero.
+   obj.start and obj.stop may be called from anywhere in loop().
