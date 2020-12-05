@@ -24,10 +24,12 @@ means you have to manually start the timer using: `obj.start`<br>
 means that the timer starts immediately.<br>
 
 ### Async, (free-run):
-```if(obj.ding()){
-     //handle the ding
-     obj.start();
-   }```<br>
+```
+if(obj.ding()){
+  //handle the ding
+  obj.start();
+}
+```<br>
 
 ### //One-shot:<br>
 ```if(obj.ding()){
