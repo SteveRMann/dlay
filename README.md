@@ -31,7 +31,7 @@ if(obj.ding()){
 }
 ```
 
-### //One-shot:
+### One-shot:
 ```
 if(obj.ding()){
   obj.stop();
