@@ -11,7 +11,7 @@
   
 */
 
-#include "dlay.h"
+#include <dlay.h>
 dlay aDelay(1000, true);              // Declare an object of dlay and start it
 
 
