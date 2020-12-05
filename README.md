@@ -18,9 +18,9 @@ _dlay()_ is a stripped-down fork of _timeObj_. If you need accuracy in micros, t
 Where:<br>
    **time** is the optional delay time in ms (default 10ms), and<br>
    **start** is an optional boolean (default false).<br>
->false
+>**false**
 means you have to manually start the timer using: `obj.start`<br>
->true
+>**true**
 means that the timer starts immediately.<br>
 
 ### Async, (free-run):
