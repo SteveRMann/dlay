@@ -36,3 +36,10 @@ dlay() is a stripped-down fork of timeObj. If you need accuracy in micros, then 
 
    obj.stop() resets the state of the timer. Otherwise, every call to ding() will be true with a time of zero.
    obj.start and obj.stop may be called from anywhere in loop().
+   
+   Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
