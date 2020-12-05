@@ -1,0 +1,10 @@
+# Datatypes (such as objects)
+dlay KEYWORD1
+
+#Methods and functions
+start KEYWORD2
+stop KEYWORD2
+setTime KEYWORD2
+ding KEYWORD2
+
+#Constants
