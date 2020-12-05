@@ -17,7 +17,7 @@ _dlay()_ is a stripped-down fork of _timeObj_. If you need accuracy in micros, t
 ```dlay obj(int:time_ms,bool:start)```<br>
 Where:<br>
    **time** is the optional delay time in ms (default 10ms), and<br>
-   **start** is an optional boolean (default false).
+   **start** is an optional boolean (default false).<br>
      *false* means you have to manually start the timer using: `obj.start`<br>
      *true* means that the timer starts immediately.<br>
 
