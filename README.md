@@ -24,11 +24,10 @@ dlay() is a stripped-down fork of timeObj. If you need accuracy in micros, then 
        ```obj.start.```<br>
 
    ### //Async, free-run:<br>
-     ```
      if(obj.ding()){
        //handle the ding
        obj.start();
-     }```<br>
+     }<br>
 
    ### //One-shot:<br>
      ```if(obj.ding()){
