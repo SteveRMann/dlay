@@ -13,14 +13,13 @@ I could replace delay() altogether and hide the mess of millis. (It makes the co
 dlay() is a stripped-down fork of timeObj. If you need accuracy in micros, then use timeObj.h
 
 ## Useage:
-  ### Initiate the object:<br>
-     dlay obj(int:time_ms,bool:start)
-     
-     Where:
-       time is the optional delay time in ms (default 10ms), and
-       start is an optional boolean (default false) to begin timing immediately,
-             or false, which means you have to manually start the timer: <br>
-       obj.start.
+### Initiate the object:<br>
+```dlay obj(int:time_ms,bool:start)```
+Where:
+   time is the optional delay time in ms (default 10ms), and
+   start is an optional boolean (default false) to begin timing immediately,
+   or false, which means you have to manually start the timer: <br>
+```obj.start```
 
    ### //Async, free-run:<br>
      if(obj.ding()){
