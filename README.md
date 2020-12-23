@@ -40,5 +40,5 @@ if(obj.ding()){
 ```
 
 **obj.stop()** resets the state of the timer. Otherwise, every call to ding() will be true with a time of zero.<br>
-**obj.start** and obj.stop may be called from anywhere in loop().
-**obj.setTime** setTime(float inMs, bool startNow) sets a new time. startNow is true or false.
+**obj.start** and obj.stop may be called from anywhere in loop().<br>
+**obj.setTime** setTime(float inMs, bool startNow) sets a new time. startNow is true or false.<br>
